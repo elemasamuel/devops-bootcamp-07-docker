@@ -230,6 +230,23 @@ Prerequisites:\
   `aws --version`
 - Or install the AWS CLI using Homebrew (does not require Rosetta 2):\
 `brew install awscli`
+- MSI Installer *(for windows)*
+
+1. Download the installer:
+   👉 https://awscli.amazonaws.com/AWSCLIV2.msi
+
+2. Run the `.msi` file and follow the installation prompts.
+
+3. **Close and reopen PowerShell** *(this refreshes your PATH)*.
+
+4. Verify the installation:
+   ```powershell
+   aws --version
+   ```
+   Expected output:
+   ```
+   aws-cli/2.x.x Python/3.x.x Windows/10 exe/AMD64
+   ```
 - [Configure AWS](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
   - Go to Services > IAM > Users and create a new user called `admin`, provide access to the AWS management console, select 'I want to create an IAM user' and click on 'Next', select 'Attach existing policies directly', select 'AdministratorAccess' and click on 'Next', check the data on the summary page and click 'Create User'. Download the csv-file containing the console login URL and the console password.
   - Logout as root user and open the console login URL (in the csv-file) and enter the username (`admin`) and password (also in the csv-file) to login as the new admin user. Change the password.
