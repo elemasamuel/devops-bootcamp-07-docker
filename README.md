@@ -256,6 +256,8 @@ Because we want to push this image to a private registry (not Docker Hub, where 
 Now we can push the image to the private registry:\
 `docker push 369076538622.dkr.ecr.eu-central-1.amazonaws.com/user-profile:1.0.0`
 
+<img width="1903" height="768" alt="Screenshot 2026-06-03 164959" src="https://github.com/user-attachments/assets/baff53cd-b82b-4458-a9a0-9338a17d25de" />
+
 </details>
 
 *****
