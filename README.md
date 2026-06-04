@@ -487,7 +487,7 @@ git add .
 git commit -m "Initial commit"
 
 # create git repository on GitHub and push your newly created local repository to it
-git remote add origin git@github.com:fsiegrist/devops-bootcamp-07-docker.git
+git remote add origin git@github.com:elemasamuel/devops-bootcamp-07-docker.git
 # rename master branch to main if necessary (default on GitHub)
 git branch -M main
 # push your newly created local repository to it
