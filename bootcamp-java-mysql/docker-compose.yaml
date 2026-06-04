@@ -1,0 +1,45 @@
+version: '3.9'
+services:
+  java-app:
+    image: 104.248.134.221:8083/java-app:1.1-SNAPSHOT
+    environment:
+      - DB_SERVER=mysql
+      - DB_USER=${MYSQL_USER}
+      - DB_PWD=${MYSQL_PASSWORD}
+      - DB_NAME=${MYSQL_DATABASE}
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+    restart: always
+    container_name: java-app
+
+  mysql:
+    image: mysql:8.0.32
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+    volumes:
+      - mysql-data:/var/lib/mysql
+    container_name: mysql
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=mysql # defines the host name of the MySQL server
+                       # (= service name for containers running in the same Docker network)
+      - PMA_PORT=3306
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    depends_on:
+      - mysql
+    restart: always
+    container_name: phpmyadmin
+
+volumes:
+  mysql-data:
