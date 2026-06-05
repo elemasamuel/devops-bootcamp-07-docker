@@ -364,8 +364,7 @@ volumes:
   db-data:
 ```
 
-<img width="1893" height="851" alt="image" src="https://github.com/user-attachments/assets/c4d60dff-b1eb-4e0d-876f-81b8f686cd05" />
-
+<img width="1477" height="242" alt="image" src="https://github.com/user-attachments/assets/7e11dfef-f6f1-40d5-8f56-de78d5440479" />
 
 </details>
 
