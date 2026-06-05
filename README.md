@@ -324,6 +324,8 @@ Now that all three containers are in the same Docker network, the application co
 
 Add a file called `docker-compose.yaml` with the above content to the server where you want to start the application, go to the same directory and execute `docker-compose up -d`.
 
+<img width="1468" height="667" alt="Screenshot 2026-06-05 102357" src="https://github.com/user-attachments/assets/e8c215f7-07ab-4cb5-9c90-db0e8c6c85c3" />
+
 </details>
 
 *****
