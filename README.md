@@ -480,7 +480,7 @@ If you want to find out, where the data of the container is stored on the host (
 - Scan your images for vulnerabilities
   ```sh
   docker login
-  docker scan myapp:1.0
+  docker scout cves myapp:1.0
   ```
 
 </details>
