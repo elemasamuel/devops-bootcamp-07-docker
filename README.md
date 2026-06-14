@@ -496,6 +496,11 @@ Your team member has improved your previous static java application and added my
 
 They ask you to configure and run the application with Mysql database on a server using docker-compose.
 
+The chart for this exercise looks like this
+
+<img width="1408" height="768" alt="docker deploy" src="https://github.com/user-attachments/assets/ba7e9455-4aba-41be-acaa-9a6c9dd779d6" />
+
+
 <details>
 <summary>Exercise 0: Create Git Repository</summary>
 <br />
