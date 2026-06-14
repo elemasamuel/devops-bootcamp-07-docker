@@ -498,7 +498,8 @@ They ask you to configure and run the application with Mysql database on a serve
 
 The chart for this exercise looks like this
 
-<img width="1408" height="768" alt="docker deploy" src="https://github.com/user-attachments/assets/ba7e9455-4aba-41be-acaa-9a6c9dd779d6" />
+<img width="1408" height="768" alt="docker chart" src="https://github.com/user-attachments/assets/fe83a539-4a2f-4820-b346-e2be5aca05fe" />
+
 
 
 <details>
