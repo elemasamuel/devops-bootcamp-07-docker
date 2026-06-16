@@ -28,3 +28,5 @@ Open [Docker Hub](https://hub.docker.com) and search for the 'sonatype/nexus3' i
 Now Nexus is running (under the non root user named 'nexus') and can be accessed in the browser opening `http://<droplet-ip-address>:8081`.
 
 If you want to find out, where the data of the container is stored on the host (i.e. where the folder referenced by the named volume 'nexus-data' is located), execute `docker inspect nexus-data` and read the "Mountpoint" property. In this folder you can find the data Nexus stores in its subfolder called 'sonatype-work'. You will find the initial admin password there, for example.
+
+To find your password, execute `cat /var/snap/docker/common/var-lib-docker/volumes/nexus-data/_data/admin.password`
